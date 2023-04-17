@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title> Lab 2 </title>
+    <script src = "index.js"></script>
+
+</head>
+
+<body>
+        <h1>Лабораторна робота 2</h1>
+
+    <div id = "content">
+
+        <h2>Картинки</h2>
+        
+        <div>
+            <img id = "images" alt = "Який гарний Alt" src = "images/1.jpg">
+            <ul>
+                <li id = "1" onclick = "changeImage(id)"> Зображення 1 </li>  
+                <li id = "2" onclick = "changeImage(id)"> Зображення 2 </li>  
+                <li id = "3" onclick = "changeImage(id)"> Зображення 3 </li>  
+                <li id = "4" onclick = "changeImage(id)"> Зображення 4 </li>  
+                <li id = "5" onclick = "changeImage(id)"> Зображення 5 </li>  
+            </ul>
+        </div>    
+            
+        <div id = "conteiner">
+            <div>
+                <p>Довжина: <input id="width" type="range" min="500" max="700" step="8" value="600" oninput="changeWidth()"></p>
+                <p>Висота:<input id="height" type="range" min="300" max="500" step="8" value="400" oninput="changeHeight()"></p> 
+                <p>Товщина рамки: <input id="border" type="range" min="0" max="8" step="1" value="4" oninput="changeBorder()"></p>
+            </div>
+            
+        </div>
+        <input id="alt" type="text" placeholder = "alt картинки" name="name">
+        <button id="apply" onclick="applied()">Підтвердити</button>
+    </div>
+
+</body>
+</html>
